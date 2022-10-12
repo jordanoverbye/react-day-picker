@@ -3,7 +3,7 @@ import { format } from 'date-fns';
 
 export function getDayButton(day: Date) {
   return screen.getByRole('button', {
-    name: format(day, 'do MMMM (EEEE)')
+    name: format(day, 'do MMMM yyyy')
   });
 }
 
@@ -29,19 +29,19 @@ export function getAllEnabledDays() {
 
 export function getDayButtons(day: Date) {
   return screen.getByRole('button', {
-    name: format(day, 'do MMMM (EEEE)')
+    name: format(day, 'do MMMM yyyy')
   });
 }
 
 export function queryDayButton(day: Date) {
   return screen.queryByRole('button', {
-    name: format(day, 'do MMMM (EEEE)')
+    name: format(day, 'do MMMM yyyy')
   });
 }
 
 export function getDayCell(day: Date) {
   return screen.getByRole('cell', {
-    name: format(day, 'do MMMM (EEEE)')
+    name: format(day, 'do MMMM yyyy')
   });
 }
 export function getWeekButton(week: number) {
